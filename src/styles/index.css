@@ -1,2 +1,7 @@
 @import "@ppl/ui/styles/tailwind.css";
+
+/* Scan demo app sources */
 @source "../**/*.tsx";
+
+/* Scan @ppl/ui library components in node_modules for Tailwind classes */
+@source "../../node_modules/@ppl/ui/dist/**/*.js";

@@ -1,6 +1,6 @@
 import "./styles/index.css";
 
-import { DesignManual, PPLDesignManual } from "@ppl/ui/theme";
+import { DesignManual, PPLDesignManual } from "./theme";
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 
