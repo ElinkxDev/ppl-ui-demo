@@ -101,12 +101,7 @@ export default function ChipsAndBadges() {
           <Badge badgeContent={100} color="primary" anchorOrigin={{ vertical: "0" }}>
             <div></div>
           </Badge>
-          <Badge
-            badgeContent={100}
-            color="primary"
-            variant="dot"
-            anchorOrigin={{ vertical: "0" }}
-          >
+          <Badge badgeContent={100} color="primary" variant="dot" anchorOrigin={{ vertical: "0" }}>
             <div></div>
           </Badge>
         </div>
@@ -122,12 +117,7 @@ export default function ChipsAndBadges() {
           <Badge badgeContent={100} color="success" anchorOrigin={{ vertical: "0" }}>
             <div></div>
           </Badge>
-          <Badge
-            badgeContent={100}
-            color="success"
-            variant="dot"
-            anchorOrigin={{ vertical: "0" }}
-          >
+          <Badge badgeContent={100} color="success" variant="dot" anchorOrigin={{ vertical: "0" }}>
             <div></div>
           </Badge>
         </div>
@@ -143,12 +133,7 @@ export default function ChipsAndBadges() {
           <Badge badgeContent={100} color="warning" anchorOrigin={{ vertical: "0" }}>
             <div></div>
           </Badge>
-          <Badge
-            badgeContent={100}
-            color="warning"
-            variant="dot"
-            anchorOrigin={{ vertical: "0" }}
-          >
+          <Badge badgeContent={100} color="warning" variant="dot" anchorOrigin={{ vertical: "0" }}>
             <div></div>
           </Badge>
         </div>
@@ -209,12 +194,7 @@ export default function ChipsAndBadges() {
             </Typography>
           </div>
           <Badge badgeContent={9} anchorOrigin={{ vertical: "-4px", horizontal: "-4px" }}>
-            <Chip
-              label="Chip"
-              icon={BoxIcon}
-              variant="outlined"
-              onClick={() => console.log("Chip clicked")}
-            />
+            <Chip label="Chip" icon={BoxIcon} variant="outlined" onClick={() => console.log("Chip clicked")} />
           </Badge>
         </div>
         <div className="flex gap-20">
@@ -275,18 +255,8 @@ export default function ChipsAndBadges() {
             </Typography>
           </div>
 
-          <Badge
-            badgeContent={9}
-            color="text"
-            anchorOrigin={{ vertical: "-4px", horizontal: "-4px" }}
-          >
-            <Chip
-              label="Chip"
-              icon={BoxIcon}
-              deleteIcon={Check}
-              disabled
-              onClick={() => console.log("Chip clicked")}
-            />
+          <Badge badgeContent={9} color="text" anchorOrigin={{ vertical: "-4px", horizontal: "-4px" }}>
+            <Chip label="Chip" icon={BoxIcon} deleteIcon={Check} disabled onClick={() => console.log("Chip clicked")} />
           </Badge>
         </div>
       </div>

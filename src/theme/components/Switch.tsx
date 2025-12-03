@@ -5,7 +5,7 @@ import { Divider, Grid, Switch, Typography } from "@ppl/ui";
 // Ukázka komponenty Switch – struktura konzistentní s Buttons.tsx
 const Switches = () => {
   type SwitchColor = "primary" | "success" | "error" | "warning" | "carton";
-  const colors: Array<{ key: SwitchColor; label: string }> = [
+  const colors: { key: SwitchColor; label: string }[] = [
     { key: "primary", label: "Primary" },
     { key: "success", label: "Success" },
     { key: "error", label: "Error" },
@@ -38,7 +38,7 @@ const Switches = () => {
       <Grid size={12}>
         <Grid container alignItems="center" justifyContent="center">
           <Grid size={2}></Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Typography component="strong" className="block text-center font-bold">
                 {c.label}
@@ -56,7 +56,7 @@ const Switches = () => {
               Checked
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Switch color={c.key} />
             </Grid>
@@ -72,7 +72,7 @@ const Switches = () => {
               Unchecked
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Switch color={c.key} checked={false} />
             </Grid>
@@ -95,7 +95,7 @@ const Switches = () => {
       <Grid size={12}>
         <Grid container alignItems="center" justifyContent="center">
           <Grid size={2}></Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Typography component="strong" className="block text-center font-bold">
                 {c.label}
@@ -113,7 +113,7 @@ const Switches = () => {
               Checked
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Switch disabled color={c.key} />
             </Grid>
@@ -129,7 +129,7 @@ const Switches = () => {
               Unchecked
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Switch disabled color={c.key} checked={false} />
             </Grid>

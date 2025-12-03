@@ -28,11 +28,7 @@ const Buttons = () => {
             Button
           </Button>
 
-          <Button
-            size="large"
-            className="min-w-[400px]"
-            startIcon={<Icon icon={ArrowNarrowRight} />}
-          >
+          <Button size="large" className="min-w-[400px]" startIcon={<Icon icon={ArrowNarrowRight} />}>
             Button
           </Button>
 
@@ -146,21 +142,11 @@ const Buttons = () => {
             Button
           </Button>
 
-          <Button
-            size="large"
-            className="min-w-[400px]"
-            startIcon={<Icon icon={ArrowNarrowRight} />}
-            disabled
-          >
+          <Button size="large" className="min-w-[400px]" startIcon={<Icon icon={ArrowNarrowRight} />} disabled>
             Button
           </Button>
 
-          <Button
-            size="large"
-            className="min-w-[400px]"
-            endIcon={<Icon icon={ArrowNarrowRight} />}
-            disabled
-          >
+          <Button size="large" className="min-w-[400px]" endIcon={<Icon icon={ArrowNarrowRight} />} disabled>
             Button
           </Button>
         </div>
@@ -184,19 +170,11 @@ const Buttons = () => {
             Button
           </Button>
 
-          <Button
-            size="medium"
-            className="min-w-[250px]"
-            startIcon={<Icon icon={ArrowNarrowRight} />}
-          >
+          <Button size="medium" className="min-w-[250px]" startIcon={<Icon icon={ArrowNarrowRight} />}>
             Button
           </Button>
 
-          <Button
-            size="medium"
-            className="min-w-[250px]"
-            endIcon={<Icon icon={ArrowNarrowRight} />}
-          >
+          <Button size="medium" className="min-w-[250px]" endIcon={<Icon icon={ArrowNarrowRight} />}>
             Button
           </Button>
         </div>
@@ -306,21 +284,11 @@ const Buttons = () => {
             Button
           </Button>
 
-          <Button
-            size="medium"
-            className="min-w-[250px]"
-            startIcon={<Icon icon={ArrowNarrowRight} />}
-            disabled
-          >
+          <Button size="medium" className="min-w-[250px]" startIcon={<Icon icon={ArrowNarrowRight} />} disabled>
             Button
           </Button>
 
-          <Button
-            size="medium"
-            className="min-w-[250px]"
-            endIcon={<Icon icon={ArrowNarrowRight} />}
-            disabled
-          >
+          <Button size="medium" className="min-w-[250px]" endIcon={<Icon icon={ArrowNarrowRight} />} disabled>
             Button
           </Button>
         </div>
@@ -516,12 +484,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="primaryLight"
-            size="large"
-            className="min-w-[400px]"
-            interactionState="hover"
-          >
+          <Button color="primaryLight" size="large" className="min-w-[400px]" interactionState="hover">
             Button
           </Button>
 
@@ -554,12 +517,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="primaryLight"
-            size="large"
-            className="min-w-[400px]"
-            interactionState="press"
-          >
+          <Button color="primaryLight" size="large" className="min-w-[400px]" interactionState="press">
             Button
           </Button>
 
@@ -592,12 +550,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="primaryLight"
-            size="large"
-            className="min-w-[400px]"
-            interactionState="focus"
-          >
+          <Button color="primaryLight" size="large" className="min-w-[400px]" interactionState="focus">
             Button
           </Button>
 
@@ -701,12 +654,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="primaryLight"
-            size="medium"
-            className="min-w-[250px]"
-            interactionState="hover"
-          >
+          <Button color="primaryLight" size="medium" className="min-w-[250px]" interactionState="hover">
             Button
           </Button>
 
@@ -739,12 +687,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="primaryLight"
-            size="medium"
-            className="min-w-[250px]"
-            interactionState="press"
-          >
+          <Button color="primaryLight" size="medium" className="min-w-[250px]" interactionState="press">
             Button
           </Button>
 
@@ -777,12 +720,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="primaryLight"
-            size="medium"
-            className="min-w-[250px]"
-            interactionState="focus"
-          >
+          <Button color="primaryLight" size="medium" className="min-w-[250px]" interactionState="focus">
             Button
           </Button>
 
@@ -1035,13 +973,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            variant="outlined"
-            color="primary"
-            size="large"
-            className="min-w-[400px]"
-            interactionState="hover"
-          >
+          <Button variant="outlined" color="primary" size="large" className="min-w-[400px]" interactionState="hover">
             Button
           </Button>
 
@@ -1076,13 +1008,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            variant="outlined"
-            color="primary"
-            size="large"
-            className="min-w-[400px]"
-            interactionState="press"
-          >
+          <Button variant="outlined" color="primary" size="large" className="min-w-[400px]" interactionState="press">
             Button
           </Button>
 
@@ -1117,13 +1043,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            variant="outlined"
-            color="primary"
-            size="large"
-            className="min-w-[400px]"
-            interactionState="focus"
-          >
+          <Button variant="outlined" color="primary" size="large" className="min-w-[400px]" interactionState="focus">
             Button
           </Button>
 
@@ -1158,13 +1078,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            variant="outlined"
-            color="primary"
-            size="large"
-            className="min-w-[400px]"
-            disabled
-          >
+          <Button variant="outlined" color="primary" size="large" className="min-w-[400px]" disabled>
             Button
           </Button>
 
@@ -1239,13 +1153,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            variant="outlined"
-            color="primary"
-            size="medium"
-            className="min-w-[250px]"
-            interactionState="hover"
-          >
+          <Button variant="outlined" color="primary" size="medium" className="min-w-[250px]" interactionState="hover">
             Button
           </Button>
 
@@ -1280,13 +1188,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            variant="outlined"
-            color="primary"
-            size="medium"
-            className="min-w-[250px]"
-            interactionState="press"
-          >
+          <Button variant="outlined" color="primary" size="medium" className="min-w-[250px]" interactionState="press">
             Button
           </Button>
 
@@ -1321,13 +1223,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            variant="outlined"
-            color="primary"
-            size="medium"
-            className="min-w-[250px]"
-            interactionState="focus"
-          >
+          <Button variant="outlined" color="primary" size="medium" className="min-w-[250px]" interactionState="focus">
             Button
           </Button>
 
@@ -1362,13 +1258,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            variant="outlined"
-            color="primary"
-            size="medium"
-            className="min-w-[250px]"
-            disabled
-          >
+          <Button variant="outlined" color="primary" size="medium" className="min-w-[250px]" disabled>
             Button
           </Button>
 
@@ -1495,12 +1385,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <IconButton
-            variant="outlined"
-            color="primary"
-            aria-label="Arrow right"
-            interactionState="hover"
-          >
+          <IconButton variant="outlined" color="primary" aria-label="Arrow right" interactionState="hover">
             <Icon icon={ArrowNarrowRight} />
           </IconButton>
         </div>
@@ -1513,12 +1398,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <IconButton
-            variant="outlined"
-            color="primary"
-            aria-label="Arrow right"
-            interactionState="press"
-          >
+          <IconButton variant="outlined" color="primary" aria-label="Arrow right" interactionState="press">
             <Icon icon={ArrowNarrowRight} />
           </IconButton>
         </div>
@@ -1531,12 +1411,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <IconButton
-            variant="outlined"
-            color="primary"
-            aria-label="Arrow right"
-            interactionState="focus"
-          >
+          <IconButton variant="outlined" color="primary" aria-label="Arrow right" interactionState="focus">
             <Icon icon={ArrowNarrowRight} />
           </IconButton>
         </div>
@@ -1583,12 +1458,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            interactionState="hover"
-            color="primary"
-            variant="text"
-            startIcon={<Icon icon={ArrowNarrowLeft} />}
-          >
+          <Button interactionState="hover" color="primary" variant="text" startIcon={<Icon icon={ArrowNarrowLeft} />}>
             Button
           </Button>
         </div>
@@ -1601,12 +1471,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            interactionState="press"
-            color="primary"
-            variant="text"
-            startIcon={<Icon icon={ArrowNarrowLeft} />}
-          >
+          <Button interactionState="press" color="primary" variant="text" startIcon={<Icon icon={ArrowNarrowLeft} />}>
             Button
           </Button>
         </div>
@@ -1619,12 +1484,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            interactionState="focus"
-            color="primary"
-            variant="text"
-            startIcon={<Icon icon={ArrowNarrowLeft} />}
-          >
+          <Button interactionState="focus" color="primary" variant="text" startIcon={<Icon icon={ArrowNarrowLeft} />}>
             Button
           </Button>
         </div>
@@ -1637,12 +1497,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            disabled
-            color="primary"
-            variant="text"
-            startIcon={<Icon icon={ArrowNarrowLeft} />}
-          >
+          <Button disabled color="primary" variant="text" startIcon={<Icon icon={ArrowNarrowLeft} />}>
             Button
           </Button>
         </div>
@@ -1669,12 +1524,7 @@ const Buttons = () => {
             Button
           </Button>
 
-          <Button
-            color="destructive"
-            size="large"
-            className="min-w-[400px]"
-            startIcon={<Icon icon={Trash01} />}
-          >
+          <Button color="destructive" size="large" className="min-w-[400px]" startIcon={<Icon icon={Trash01} />}>
             Button
           </Button>
         </div>
@@ -1687,12 +1537,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="destructive"
-            size="large"
-            className="min-w-[400px]"
-            interactionState="hover"
-          >
+          <Button color="destructive" size="large" className="min-w-[400px]" interactionState="hover">
             Button
           </Button>
 
@@ -1715,12 +1560,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="destructive"
-            size="large"
-            className="min-w-[400px]"
-            interactionState="press"
-          >
+          <Button color="destructive" size="large" className="min-w-[400px]" interactionState="press">
             Button
           </Button>
 
@@ -1743,12 +1583,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="destructive"
-            size="large"
-            className="min-w-[400px]"
-            interactionState="focus"
-          >
+          <Button color="destructive" size="large" className="min-w-[400px]" interactionState="focus">
             Button
           </Button>
 
@@ -1805,12 +1640,7 @@ const Buttons = () => {
             Button
           </Button>
 
-          <Button
-            color="destructive"
-            size="medium"
-            className="min-w-[250px]"
-            startIcon={<Icon icon={Trash01} />}
-          >
+          <Button color="destructive" size="medium" className="min-w-[250px]" startIcon={<Icon icon={Trash01} />}>
             Button
           </Button>
         </div>
@@ -1823,12 +1653,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="destructive"
-            size="medium"
-            className="min-w-[250px]"
-            interactionState="hover"
-          >
+          <Button color="destructive" size="medium" className="min-w-[250px]" interactionState="hover">
             Button
           </Button>
 
@@ -1851,12 +1676,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="destructive"
-            size="medium"
-            className="min-w-[250px]"
-            interactionState="press"
-          >
+          <Button color="destructive" size="medium" className="min-w-[250px]" interactionState="press">
             Button
           </Button>
 
@@ -1879,12 +1699,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="destructive"
-            size="medium"
-            className="min-w-[250px]"
-            interactionState="focus"
-          >
+          <Button color="destructive" size="medium" className="min-w-[250px]" interactionState="focus">
             Button
           </Button>
 
@@ -2088,12 +1903,7 @@ const Buttons = () => {
             Button
           </Button>
 
-          <Button
-            color="destructiveLight"
-            size="large"
-            className="min-w-[400px]"
-            startIcon={<Icon icon={Trash01} />}
-          >
+          <Button color="destructiveLight" size="large" className="min-w-[400px]" startIcon={<Icon icon={Trash01} />}>
             Button
           </Button>
         </div>
@@ -2106,12 +1916,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="destructiveLight"
-            size="large"
-            className="min-w-[400px]"
-            interactionState="hover"
-          >
+          <Button color="destructiveLight" size="large" className="min-w-[400px]" interactionState="hover">
             Button
           </Button>
 
@@ -2134,12 +1939,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="destructiveLight"
-            size="large"
-            className="min-w-[400px]"
-            interactionState="press"
-          >
+          <Button color="destructiveLight" size="large" className="min-w-[400px]" interactionState="press">
             Button
           </Button>
 
@@ -2162,12 +1962,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="destructiveLight"
-            size="large"
-            className="min-w-[400px]"
-            interactionState="focus"
-          >
+          <Button color="destructiveLight" size="large" className="min-w-[400px]" interactionState="focus">
             Button
           </Button>
 
@@ -2224,12 +2019,7 @@ const Buttons = () => {
             Button
           </Button>
 
-          <Button
-            color="destructiveLight"
-            size="medium"
-            className="min-w-[250px]"
-            startIcon={<Icon icon={Trash01} />}
-          >
+          <Button color="destructiveLight" size="medium" className="min-w-[250px]" startIcon={<Icon icon={Trash01} />}>
             Button
           </Button>
         </div>
@@ -2242,12 +2032,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="destructiveLight"
-            size="medium"
-            className="min-w-[250px]"
-            interactionState="hover"
-          >
+          <Button color="destructiveLight" size="medium" className="min-w-[250px]" interactionState="hover">
             Button
           </Button>
 
@@ -2270,12 +2055,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="destructiveLight"
-            size="medium"
-            className="min-w-[250px]"
-            interactionState="press"
-          >
+          <Button color="destructiveLight" size="medium" className="min-w-[250px]" interactionState="press">
             Button
           </Button>
 
@@ -2298,12 +2078,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            color="destructiveLight"
-            size="medium"
-            className="min-w-[250px]"
-            interactionState="focus"
-          >
+          <Button color="destructiveLight" size="medium" className="min-w-[250px]" interactionState="focus">
             Button
           </Button>
 
@@ -2616,13 +2391,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            variant="outlined"
-            color="destructive"
-            size="large"
-            className="min-w-[400px]"
-            disabled
-          >
+          <Button variant="outlined" color="destructive" size="large" className="min-w-[400px]" disabled>
             Button
           </Button>
 
@@ -2766,13 +2535,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <Button
-            variant="outlined"
-            color="destructive"
-            size="medium"
-            className="min-w-[250px]"
-            disabled
-          >
+          <Button variant="outlined" color="destructive" size="medium" className="min-w-[250px]" disabled>
             Button
           </Button>
 
@@ -2888,12 +2651,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <IconButton
-            variant="outlined"
-            color="destructive"
-            aria-label="Arrow right"
-            interactionState="hover"
-          >
+          <IconButton variant="outlined" color="destructive" aria-label="Arrow right" interactionState="hover">
             <Icon icon={Trash01} />
           </IconButton>
         </div>
@@ -2906,12 +2664,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <IconButton
-            variant="outlined"
-            color="destructive"
-            aria-label="Arrow right"
-            interactionState="press"
-          >
+          <IconButton variant="outlined" color="destructive" aria-label="Arrow right" interactionState="press">
             <Icon icon={Trash01} />
           </IconButton>
         </div>
@@ -2924,12 +2677,7 @@ const Buttons = () => {
             </Typography>
           </div>
 
-          <IconButton
-            variant="outlined"
-            color="destructive"
-            aria-label="Arrow right"
-            interactionState="focus"
-          >
+          <IconButton variant="outlined" color="destructive" aria-label="Arrow right" interactionState="focus">
             <Icon icon={Trash01} />
           </IconButton>
         </div>

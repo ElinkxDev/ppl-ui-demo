@@ -51,12 +51,7 @@ const Selects = () => {
           <Typography variant="h5" component="h3" align="center" gutterBottom>
             Výchozí vzhled dle default props
           </Typography>
-          <Select
-            label="Title"
-            placeholder="Select option..."
-            options={basicOptions}
-            fullWidth={false}
-          />
+          <Select label="Title" placeholder="Select option..." options={basicOptions} fullWidth={false} />
         </div>
       </Grid>
 
@@ -105,36 +100,16 @@ const Selects = () => {
             <Select label="Title" placeholder="Placeholder..." options={basicOptions} />
           </Grid>
           <Grid size={2}>
-            <Select
-              color="success"
-              label="Title"
-              placeholder="Placeholder..."
-              options={basicOptions}
-            />
+            <Select color="success" label="Title" placeholder="Placeholder..." options={basicOptions} />
           </Grid>
           <Grid size={2}>
-            <Select
-              color="error"
-              label="Title"
-              placeholder="Placeholder..."
-              options={basicOptions}
-            />
+            <Select color="error" label="Title" placeholder="Placeholder..." options={basicOptions} />
           </Grid>
           <Grid size={2}>
-            <Select
-              color="warning"
-              label="Title"
-              placeholder="Placeholder..."
-              options={basicOptions}
-            />
+            <Select color="warning" label="Title" placeholder="Placeholder..." options={basicOptions} />
           </Grid>
           <Grid size={2}>
-            <Select
-              color="carton"
-              label="Title"
-              placeholder="Placeholder..."
-              options={basicOptions}
-            />
+            <Select color="carton" label="Title" placeholder="Placeholder..." options={basicOptions} />
           </Grid>
         </Grid>
       </Grid>
@@ -188,40 +163,16 @@ const Selects = () => {
             <Select label="Title" placeholder="Placeholder..." options={basicOptions} disabled />
           </Grid>
           <Grid size={2}>
-            <Select
-              color="success"
-              label="Title"
-              placeholder="Placeholder..."
-              options={basicOptions}
-              disabled
-            />
+            <Select color="success" label="Title" placeholder="Placeholder..." options={basicOptions} disabled />
           </Grid>
           <Grid size={2}>
-            <Select
-              color="error"
-              label="Title"
-              placeholder="Placeholder..."
-              options={basicOptions}
-              disabled
-            />
+            <Select color="error" label="Title" placeholder="Placeholder..." options={basicOptions} disabled />
           </Grid>
           <Grid size={2}>
-            <Select
-              color="warning"
-              label="Title"
-              placeholder="Placeholder..."
-              options={basicOptions}
-              disabled
-            />
+            <Select color="warning" label="Title" placeholder="Placeholder..." options={basicOptions} disabled />
           </Grid>
           <Grid size={2}>
-            <Select
-              color="carton"
-              label="Title"
-              placeholder="Placeholder..."
-              options={basicOptions}
-              disabled
-            />
+            <Select color="carton" label="Title" placeholder="Placeholder..." options={basicOptions} disabled />
           </Grid>
         </Grid>
       </Grid>
@@ -233,40 +184,16 @@ const Selects = () => {
             <Select label="Title" options={basicOptions} defaultValue="option1" disabled />
           </Grid>
           <Grid size={2}>
-            <Select
-              color="success"
-              label="Title"
-              options={basicOptions}
-              defaultValue="option1"
-              disabled
-            />
+            <Select color="success" label="Title" options={basicOptions} defaultValue="option1" disabled />
           </Grid>
           <Grid size={2}>
-            <Select
-              color="error"
-              label="Title"
-              options={basicOptions}
-              defaultValue="option1"
-              disabled
-            />
+            <Select color="error" label="Title" options={basicOptions} defaultValue="option1" disabled />
           </Grid>
           <Grid size={2}>
-            <Select
-              color="warning"
-              label="Title"
-              options={basicOptions}
-              defaultValue="option1"
-              disabled
-            />
+            <Select color="warning" label="Title" options={basicOptions} defaultValue="option1" disabled />
           </Grid>
           <Grid size={2}>
-            <Select
-              color="carton"
-              label="Title"
-              options={basicOptions}
-              defaultValue="option1"
-              disabled
-            />
+            <Select color="carton" label="Title" options={basicOptions} defaultValue="option1" disabled />
           </Grid>
         </Grid>
       </Grid>
@@ -313,20 +240,10 @@ const Selects = () => {
             <Select label="Title" placeholder="Select..." options={basicOptions} />
           </Grid>
           <Grid size={3}>
-            <Select
-              label="Title"
-              placeholder="Select..."
-              options={basicOptions}
-              interactionState="hover"
-            />
+            <Select label="Title" placeholder="Select..." options={basicOptions} interactionState="hover" />
           </Grid>
           <Grid size={3}>
-            <Select
-              label="Title"
-              placeholder="Select..."
-              options={basicOptions}
-              interactionState="focus"
-            />
+            <Select label="Title" placeholder="Select..." options={basicOptions} interactionState="focus" />
           </Grid>
           <Grid size={3}>
             <Select label="Title" placeholder="Select..." options={basicOptions} disabled />
@@ -376,20 +293,10 @@ const Selects = () => {
             <Select label="Title" options={basicOptions} defaultValue="option1" />
           </Grid>
           <Grid size={3}>
-            <Select
-              label="Title"
-              options={basicOptions}
-              defaultValue="option1"
-              interactionState="hover"
-            />
+            <Select label="Title" options={basicOptions} defaultValue="option1" interactionState="hover" />
           </Grid>
           <Grid size={3}>
-            <Select
-              label="Title"
-              options={basicOptions}
-              defaultValue="option1"
-              interactionState="focus"
-            />
+            <Select label="Title" options={basicOptions} defaultValue="option1" interactionState="focus" />
           </Grid>
           <Grid size={3}>
             <Select label="Title" options={basicOptions} defaultValue="option1" disabled />
@@ -487,20 +394,10 @@ const Selects = () => {
       <Grid size={12}>
         <Grid container alignItems="center">
           <Grid size={3}>
-            <Select
-              label="Title"
-              placeholder="Select..."
-              options={basicOptions}
-              startIcon={<Icon icon={SearchSm} />}
-            />
+            <Select label="Title" placeholder="Select..." options={basicOptions} startIcon={<Icon icon={SearchSm} />} />
           </Grid>
           <Grid size={3}>
-            <Select
-              label="Title"
-              options={basicOptions}
-              defaultValue="option1"
-              startIcon={<Icon icon={SearchSm} />}
-            />
+            <Select label="Title" options={basicOptions} defaultValue="option1" startIcon={<Icon icon={SearchSm} />} />
           </Grid>
           <Grid size={3}>
             <Select
@@ -681,23 +578,13 @@ const Selects = () => {
             <Typography component="strong" className="mb-2 block font-bold">
               Full Width (default)
             </Typography>
-            <Select
-              label="Full Width Select"
-              placeholder="Select..."
-              options={basicOptions}
-              fullWidth
-            />
+            <Select label="Full Width Select" placeholder="Select..." options={basicOptions} fullWidth />
           </Grid>
           <Grid size={12}>
             <Typography component="strong" className="mb-2 block font-bold">
               Auto Width
             </Typography>
-            <Select
-              label="Auto Width Select"
-              placeholder="Select..."
-              options={basicOptions}
-              fullWidth={false}
-            />
+            <Select label="Auto Width Select" placeholder="Select..." options={basicOptions} fullWidth={false} />
           </Grid>
         </Grid>
       </Grid>

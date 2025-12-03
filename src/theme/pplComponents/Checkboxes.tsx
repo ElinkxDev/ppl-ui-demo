@@ -1,5 +1,5 @@
 import React from "react";
-import { Checkbox, Divider, Typography } from "@ppl/ui";
+import { Checkbox, Typography } from "@ppl/ui";
 
 const Checkboxes = () => {
   return (

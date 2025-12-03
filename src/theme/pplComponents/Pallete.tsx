@@ -21,10 +21,7 @@ interface DarkModeSwatchProps {
 function ColorSwatch({ name, colorClass, hexValue, style }: ColorSwatchProps) {
   return (
     <div className="flex flex-col">
-      <div
-        className={`${colorClass ?? ""} border-headline-10 h-32 w-full rounded-md border`}
-        style={style}
-      />
+      <div className={`${colorClass ?? ""} border-headline-10 h-32 w-full rounded-md border`} style={style} />
       <div className="mt-2">
         <p className="text-headline text-sm font-medium">{name}</p>
         <p className="text-text-60 text-xs">{hexValue}</p>
@@ -36,10 +33,7 @@ function ColorSwatch({ name, colorClass, hexValue, style }: ColorSwatchProps) {
 function DarkModeSwatch({ name, hexValue }: DarkModeSwatchProps) {
   return (
     <div className="flex flex-col">
-      <div
-        className="h-32 w-full rounded-md border border-white/20"
-        style={{ backgroundColor: hexValue }}
-      />
+      <div className="h-32 w-full rounded-md border border-white/20" style={{ backgroundColor: hexValue }} />
       <div className="mt-2">
         <p className="text-sm font-medium text-white">{name}</p>
         <p className="text-sm text-white/60">{hexValue}</p>
@@ -79,7 +73,7 @@ export function Pallete() {
         Main Color Palette
       </Typography>
       <div className="grid grid-cols-4 gap-6">
-        {baseColors.map((color) => (
+        {baseColors.map(color => (
           <ColorSwatch key={color.name} {...color} />
         ))}
       </div>
@@ -91,7 +85,7 @@ export function Pallete() {
       </Typography>
       <div className="rounded-lg bg-black p-6">
         <div className="grid grid-cols-4 gap-6">
-          {darkModeColors.map((color) => (
+          {darkModeColors.map(color => (
             <DarkModeSwatch key={color.name} {...color} />
           ))}
         </div>

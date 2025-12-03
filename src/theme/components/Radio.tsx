@@ -6,7 +6,7 @@ import { Divider, Grid, Icon, Radio, RadioGroup, Typography } from "@ppl/ui";
 // Ukázka komponenty Radio – struktura konzistentní s Checkbox.tsx
 const Radios = () => {
   type RadioColor = "primary" | "success" | "error" | "warning" | "carton";
-  const colors: Array<{ key: RadioColor; label: string }> = [
+  const colors: { key: RadioColor; label: string }[] = [
     { key: "primary", label: "Primary" },
     { key: "success", label: "Success" },
     { key: "error", label: "Error" },
@@ -41,7 +41,7 @@ const Radios = () => {
       <Grid size={12}>
         <Grid container alignItems="center" justifyContent="center">
           <Grid size={2}></Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Typography component="strong" className="block text-center font-bold">
                 {c.label}
@@ -59,7 +59,7 @@ const Radios = () => {
               Checked
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <RadioGroup defaultValue="checked">
                 <Radio value="checked" color={c.key} />
@@ -77,7 +77,7 @@ const Radios = () => {
               Unchecked
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <RadioGroup defaultValue="other">
                 <Radio value="unchecked" color={c.key} />
@@ -102,7 +102,7 @@ const Radios = () => {
       <Grid size={12}>
         <Grid container alignItems="center" justifyContent="center">
           <Grid size={2}></Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Typography component="strong" className="block text-center font-bold">
                 {c.label}
@@ -120,7 +120,7 @@ const Radios = () => {
               Checked
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <RadioGroup defaultValue="checked" disabled>
                 <Radio value="checked" color={c.key} />
@@ -138,7 +138,7 @@ const Radios = () => {
               Unchecked
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <RadioGroup defaultValue="other" disabled>
                 <Radio value="unchecked" color={c.key} />

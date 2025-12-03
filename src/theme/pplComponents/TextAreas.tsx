@@ -1,5 +1,5 @@
 import React from "react";
-import { Divider, TextField, Typography } from "@ppl/ui";
+import { TextField, Typography } from "@ppl/ui";
 
 export default function TextAreas() {
   return (

@@ -8,15 +8,7 @@ interface PaletteBoxProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const PaletteBox = ({ variable, ...props }: PaletteBoxProps) => {
-  const baseClasses = [
-    "flex",
-    "w-full",
-    "h-12",
-    "items-center",
-    "justify-center",
-    "rounded-sm",
-    "shadow-md",
-  ];
+  const baseClasses = ["flex", "w-full", "h-12", "items-center", "justify-center", "rounded-sm", "shadow-md"];
   return (
     <div className="flex flex-col gap-1">
       <div {...props} className={cn(...baseClasses, props.className)}>

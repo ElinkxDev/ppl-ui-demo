@@ -79,12 +79,7 @@ export default function Selects() {
             </Typography>
           </div>
           <div className="min-w-[250px]">
-            <Select
-              label="Title"
-              options={basicOptions}
-              interactionState="hover"
-              helperText="Helper text"
-            />
+            <Select label="Title" options={basicOptions} interactionState="hover" helperText="Helper text" />
           </div>
           <div className="min-w-[250px]">
             <Select
@@ -105,12 +100,7 @@ export default function Selects() {
             </Typography>
           </div>
           <div className="min-w-[250px]">
-            <Select
-              label="Title"
-              options={basicOptions}
-              interactionState="focus"
-              helperText="Helper text"
-            />
+            <Select label="Title" options={basicOptions} interactionState="focus" helperText="Helper text" />
           </div>
           <div className="min-w-[250px]">
             <Select
@@ -131,21 +121,10 @@ export default function Selects() {
             </Typography>
           </div>
           <div className="min-w-[250px]">
-            <Select
-              label="Title"
-              options={basicOptions}
-              error
-              helperText="Field is required"
-            />
+            <Select label="Title" options={basicOptions} error helperText="Field is required" />
           </div>
           <div className="min-w-[250px]">
-            <Select
-              label="Title"
-              options={basicOptions}
-              value="option1"
-              error
-              helperText="Invalid selection"
-            />
+            <Select label="Title" options={basicOptions} value="option1" error helperText="Invalid selection" />
           </div>
         </div>
 
@@ -160,13 +139,7 @@ export default function Selects() {
             <Select label="Title" options={basicOptions} disabled helperText="Helper text" />
           </div>
           <div className="min-w-[250px]">
-            <Select
-              label="Title"
-              options={basicOptions}
-              value="option1"
-              disabled
-              helperText="Helper text"
-            />
+            <Select label="Title" options={basicOptions} value="option1" disabled helperText="Helper text" />
           </div>
         </div>
 
@@ -178,11 +151,7 @@ export default function Selects() {
             </Typography>
           </div>
           <div className="min-w-[250px]">
-            <Select
-              label="Grouped Select"
-              groupedOptions={groupedOptions}
-              helperText="With grouped options"
-            />
+            <Select label="Grouped Select" groupedOptions={groupedOptions} helperText="With grouped options" />
           </div>
           <div className="min-w-[250px]">
             <Select
@@ -209,12 +178,8 @@ export default function Selects() {
               helperText="With custom option rendering"
               renderOption={(option, state) => (
                 <div className="flex items-center gap-2">
-                  {state.selected && (
-                    <span className="text-primary">✓</span>
-                  )}
-                  <span className={state.highlighted ? "font-semibold" : ""}>
-                    {option.label}
-                  </span>
+                  {state.selected && <span className="text-primary">✓</span>}
+                  <span className={state.highlighted ? "font-semibold" : ""}>{option.label}</span>
                 </div>
               )}
             />
@@ -225,10 +190,8 @@ export default function Selects() {
               options={basicOptions}
               value="option2"
               helperText="With custom value rendering"
-              renderValue={(selected) => (
-                <span className="text-primary font-semibold">
-                  ★ {selected?.label || "Vyberte..."}
-                </span>
+              renderValue={selected => (
+                <span className="text-primary font-semibold">★ {selected?.label || "Vyberte..."}</span>
               )}
             />
           </div>

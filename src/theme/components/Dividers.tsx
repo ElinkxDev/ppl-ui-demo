@@ -182,9 +182,7 @@ const Dividers = () => {
             <Typography variant="h5" gutterBottom>
               Levý panel
             </Typography>
-            <Typography variant="body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </Typography>
+            <Typography variant="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Typography>
           </div>
           <Divider orientation="vertical" flexItem>
             <Typography variant="labelS" component="span" className="rotate-90 whitespace-nowrap">
@@ -195,9 +193,7 @@ const Dividers = () => {
             <Typography variant="h5" gutterBottom>
               Pravý panel
             </Typography>
-            <Typography variant="body">
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Typography>
+            <Typography variant="body">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
           </div>
         </div>
       </Grid>
@@ -261,9 +257,7 @@ const Dividers = () => {
             <Typography variant="h5" gutterBottom>
               Panel A
             </Typography>
-            <Typography variant="body">
-              Obsah prvního panelu s nějakým textem a informacemi.
-            </Typography>
+            <Typography variant="body">Obsah prvního panelu s nějakým textem a informacemi.</Typography>
           </div>
           <Divider orientation="vertical" />
           <div className="flex-1 p-6">

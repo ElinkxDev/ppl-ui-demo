@@ -5,7 +5,7 @@ import { BoxIcon } from "@ppl/ui/icons";
 
 const Chips = () => {
   type ChipColor = "primary" | "success" | "error" | "warning" | "carton" | "text";
-  const colors: Array<{ key: ChipColor; label: string }> = [
+  const colors: { key: ChipColor; label: string }[] = [
     { key: "primary", label: "Primary" },
     { key: "success", label: "Success" },
     { key: "error", label: "Error" },
@@ -36,7 +36,7 @@ const Chips = () => {
       <Grid size={12}>
         <Grid container alignItems="center" justifyContent="center" columns={7}>
           <Grid size={1}></Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={1} key={c.key}>
               <Typography component="strong" className="block text-center font-bold">
                 {c.label}
@@ -53,7 +53,7 @@ const Chips = () => {
               Filled
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={1} key={c.key}>
               <Chip label={c.label} color={c.key} />
             </Grid>
@@ -68,7 +68,7 @@ const Chips = () => {
               Outlined
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={1} key={c.key}>
               <Chip label={c.label} color={c.key} variant="outlined" />
             </Grid>
@@ -202,11 +202,7 @@ const Chips = () => {
 
       <Grid size={12}>
         <div className="flex flex-wrap gap-2">
-          <Chip
-            label="Clickable Deletable"
-            onClick={() => alert("Clicked!")}
-            onDelete={() => alert("Deleted!")}
-          />
+          <Chip label="Clickable Deletable" onClick={() => alert("Clicked!")} onDelete={() => alert("Deleted!")} />
           <Chip
             label="Clickable Deletable"
             variant="outlined"
@@ -416,12 +412,7 @@ const Chips = () => {
       <Grid size={12}>
         <div className="flex flex-wrap gap-2">
           <Chip label="Custom Delete" onDelete={() => alert("Deleted!")} deleteIcon={UserCircle} />
-          <Chip
-            label="Custom Delete"
-            variant="outlined"
-            onDelete={() => alert("Deleted!")}
-            deleteIcon={X}
-          />
+          <Chip label="Custom Delete" variant="outlined" onDelete={() => alert("Deleted!")} deleteIcon={X} />
         </div>
       </Grid>
 
@@ -489,42 +480,17 @@ const Chips = () => {
         <Grid container alignItems="center" justifyContent="center" columns={7}>
           <Grid size={1} className="justify-self-start">
             <Badge badgeContent={9} anchorOrigin={{ vertical: "-4px", horizontal: "-4px" }}>
-              <Chip
-                label="Chip"
-                icon={BoxIcon}
-                variant="outlined"
-                onClick={() => alert("Clicked!")}
-              />
+              <Chip label="Chip" icon={BoxIcon} variant="outlined" onClick={() => alert("Clicked!")} />
             </Badge>
           </Grid>
           <Grid size={1}>
-            <Badge
-              badgeContent={9}
-              anchorOrigin={{ vertical: "-4px", horizontal: "-4px" }}
-              color="success"
-            >
-              <Chip
-                label="Chip"
-                color="success"
-                icon={BoxIcon}
-                variant="outlined"
-                onClick={() => alert("Clicked!")}
-              />
+            <Badge badgeContent={9} anchorOrigin={{ vertical: "-4px", horizontal: "-4px" }} color="success">
+              <Chip label="Chip" color="success" icon={BoxIcon} variant="outlined" onClick={() => alert("Clicked!")} />
             </Badge>
           </Grid>
           <Grid size={1}>
-            <Badge
-              badgeContent={9}
-              anchorOrigin={{ vertical: "-4px", horizontal: "-4px" }}
-              color="error"
-            >
-              <Chip
-                label="Chip"
-                color="error"
-                icon={BoxIcon}
-                variant="outlined"
-                onClick={() => alert("Clicked!")}
-              />
+            <Badge badgeContent={9} anchorOrigin={{ vertical: "-4px", horizontal: "-4px" }} color="error">
+              <Chip label="Chip" color="error" icon={BoxIcon} variant="outlined" onClick={() => alert("Clicked!")} />
             </Badge>
           </Grid>
         </Grid>
@@ -537,20 +503,12 @@ const Chips = () => {
             </Badge>
           </Grid>
           <Grid size={1}>
-            <Badge
-              badgeContent={9}
-              anchorOrigin={{ vertical: "-4px", horizontal: "-4px" }}
-              color="success"
-            >
+            <Badge badgeContent={9} anchorOrigin={{ vertical: "-4px", horizontal: "-4px" }} color="success">
               <Chip label="Chip" color="success" icon={BoxIcon} deleteIcon={Check} />
             </Badge>
           </Grid>
           <Grid size={1}>
-            <Badge
-              badgeContent={9}
-              anchorOrigin={{ vertical: "-4px", horizontal: "-4px" }}
-              color="error"
-            >
+            <Badge badgeContent={9} anchorOrigin={{ vertical: "-4px", horizontal: "-4px" }} color="error">
               <Chip label="Chip" color="error" icon={BoxIcon} deleteIcon={Check} />
             </Badge>
           </Grid>

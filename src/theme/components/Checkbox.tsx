@@ -5,7 +5,7 @@ import { Checkbox, Divider, Grid, Typography } from "@ppl/ui";
 // Ukázka komponenty Checkbox – struktura konzistentní s Switch.tsx
 const Checkboxes = () => {
   type CheckboxColor = "primary" | "success" | "error" | "warning" | "carton";
-  const colors: Array<{ key: CheckboxColor; label: string }> = [
+  const colors: { key: CheckboxColor; label: string }[] = [
     { key: "primary", label: "Primary" },
     { key: "success", label: "Success" },
     { key: "error", label: "Error" },
@@ -38,7 +38,7 @@ const Checkboxes = () => {
       <Grid size={12}>
         <Grid container alignItems="center" justifyContent="center">
           <Grid size={2}></Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Typography component="strong" className="block text-center font-bold">
                 {c.label}
@@ -56,7 +56,7 @@ const Checkboxes = () => {
               Checked
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Checkbox color={c.key} />
             </Grid>
@@ -72,7 +72,7 @@ const Checkboxes = () => {
               Unchecked
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Checkbox color={c.key} checked={false} />
             </Grid>
@@ -88,7 +88,7 @@ const Checkboxes = () => {
               Indeterminate
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Checkbox color={c.key} indeterminate />
             </Grid>
@@ -111,7 +111,7 @@ const Checkboxes = () => {
       <Grid size={12}>
         <Grid container alignItems="center" justifyContent="center">
           <Grid size={2}></Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Typography component="strong" className="block text-center font-bold">
                 {c.label}
@@ -129,7 +129,7 @@ const Checkboxes = () => {
               Checked
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Checkbox disabled color={c.key} />
             </Grid>
@@ -145,7 +145,7 @@ const Checkboxes = () => {
               Unchecked
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Checkbox disabled color={c.key} checked={false} />
             </Grid>
@@ -161,7 +161,7 @@ const Checkboxes = () => {
               Indeterminate
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Checkbox disabled color={c.key} indeterminate />
             </Grid>

@@ -4,7 +4,7 @@ import { Badge, Divider, Grid, Icon, Typography } from "@ppl/ui";
 
 const Badges = () => {
   type BadgeColor = "primary" | "error" | "success" | "warning" | "carton";
-  const colors: Array<{ key: BadgeColor; label: string }> = [
+  const colors: { key: BadgeColor; label: string }[] = [
     { key: "primary", label: "Primary" },
     { key: "error", label: "Error" },
     { key: "success", label: "Success" },
@@ -67,7 +67,7 @@ const Badges = () => {
       <Grid size={12}>
         <Grid container alignItems="center" justifyContent="center">
           <Grid size={2}></Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Typography component="strong" className="block text-center font-bold">
                 {c.label}
@@ -84,7 +84,7 @@ const Badges = () => {
               Standard
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Badge badgeContent={4} color={c.key}>
                 <Icon icon={Inbox01} size="lg" />
@@ -97,7 +97,7 @@ const Badges = () => {
       <Grid size={12}>
         <Grid container alignItems="center" justifyContent="center">
           <Grid size={2}></Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Typography component="strong" className="block text-center font-bold">
                 {c.label}
@@ -114,7 +114,7 @@ const Badges = () => {
               Dot
             </Typography>
           </Grid>
-          {colors.map((c) => (
+          {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Badge variant="dot" badgeContent={1} color={c.key}>
                 <Icon icon={Inbox01} size="lg" />
@@ -137,7 +137,7 @@ const Badges = () => {
 
       <Grid size={12}>
         <Typography variant="body" gutterBottom className="mb-6">
-          Badge zobrazí "max+" když obsah překročí maximální hodnotu (výchozí 99).
+          Badge zobrazí &quot;max+&quot; když obsah překročí maximální hodnotu (výchozí 99).
         </Typography>
       </Grid>
 
@@ -244,8 +244,7 @@ const Badges = () => {
 
       <Grid size={12}>
         <Typography variant="body" gutterBottom className="mb-6">
-          Použijte overlap prop pro nastavení překrytí badge nad obdélníkovým nebo kruhovým
-          elementem.
+          Použijte overlap prop pro nastavení překrytí badge nad obdélníkovým nebo kruhovým elementem.
         </Typography>
       </Grid>
 

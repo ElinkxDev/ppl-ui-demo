@@ -161,9 +161,7 @@ const PPLDesignManual = () => {
         }}
       >
         {/* Toggle button */}
-        <div
-          className={`border-headline-10 flex border-b p-2 ${isPanelExpanded ? "justify-end" : "justify-center"}`}
-        >
+        <div className={`border-headline-10 flex border-b p-2 ${isPanelExpanded ? "justify-end" : "justify-center"}`}>
           <IconButton
             aria-label={isPanelExpanded ? "Minimalizovat panel" : "Rozbalit panel"}
             size="small"
@@ -178,7 +176,7 @@ const PPLDesignManual = () => {
         {/* Navigační položky */}
         <nav className="py-4">
           <Tooltip.Provider>
-            {modules.map((module) => {
+            {modules.map(module => {
               if (!isPanelExpanded) {
                 return (
                   <Tooltip.Root key={module.id}>
@@ -223,20 +221,18 @@ const PPLDesignManual = () => {
             Universal PPL design system
           </Typography>
           <Typography variant="body" className="text-text-secondary mb-8">
-            Jednotný design systém pro aplikace PPL postavený na moderních webových technologiích.
-            Využívá{" "}
+            Jednotný design systém pro aplikace PPL postavený na moderních webových technologiích. Využívá{" "}
             <Typography component="strong" color="primary" className="font-bold">
               Tailwind CSS
             </Typography>{" "}
-            pro utility-first přístup ke stylování, design tokeny pro centrální správu designových
-            proměnných (barvy, typografie, rozestupy) a{" "}
+            pro utility-first přístup ke stylování, design tokeny pro centrální správu designových proměnných (barvy,
+            typografie, rozestupy) a{" "}
             <Typography component="strong" color="primary" className="font-bold">
               React komponenty
             </Typography>{" "}
-            pro znovupoužitelné UI prvky. Tokeny jsou definovány v JSON formátu a automaticky
-            transformovány do CSS custom properties, což zajišťuje konzistenci designu napříč všemi
-            aplikacemi a umožňuje snadnou údržbu a změny vzhledu na jednom místě. Pro ikony využívá
-            knihovnu{" "}
+            pro znovupoužitelné UI prvky. Tokeny jsou definovány v JSON formátu a automaticky transformovány do CSS
+            custom properties, což zajišťuje konzistenci designu napříč všemi aplikacemi a umožňuje snadnou údržbu a
+            změny vzhledu na jednom místě. Pro ikony využívá knihovnu{" "}
             <Typography component="strong" color="primary" className="font-bold">
               @untitledui/icons
             </Typography>

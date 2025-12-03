@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm update:*)",
+      "Bash(npm show:*)",
+      "Bash(npm view:*)",
+      "Bash(cat:*)",
+      "Bash(dir:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run lint:fix:*)",
+      "Bash(npm run format:*)",
+      "Bash(rm \"c:\\Projekty\\Git\\ELXBLUE\\PPL\\ppl-ui-demo\\nul\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

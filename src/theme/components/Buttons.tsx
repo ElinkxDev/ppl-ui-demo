@@ -404,32 +404,17 @@ const Buttons = () => {
             </Button>
           </Grid>
           <Grid size={2}>
-            <Button
-              fullWidth
-              color="primaryLight"
-              textAlign="left"
-              startIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button fullWidth color="primaryLight" textAlign="left" startIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
           <Grid size={2}>
-            <Button
-              fullWidth
-              color="destructive"
-              textAlign="left"
-              startIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button fullWidth color="destructive" textAlign="left" startIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
           <Grid size={2}>
-            <Button
-              fullWidth
-              color="destructiveLight"
-              textAlign="left"
-              startIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button fullWidth color="destructiveLight" textAlign="left" startIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
@@ -443,12 +428,7 @@ const Buttons = () => {
             </Typography>
           </Grid>
           <Grid size={2}>
-            <Button
-              fullWidth
-              variant="outlined"
-              textAlign="left"
-              startIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button fullWidth variant="outlined" textAlign="left" startIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
@@ -495,12 +475,7 @@ const Buttons = () => {
             </Typography>
           </Grid>
           <Grid size={2}>
-            <Button
-              fullWidth
-              disabled
-              textAlign="left"
-              startIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button fullWidth disabled textAlign="left" startIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
@@ -552,11 +527,7 @@ const Buttons = () => {
             </Button>
           </Grid>
           <Grid size={2}>
-            <Button
-              variant="text"
-              color="primaryLight"
-              startIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button variant="text" color="primaryLight" startIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
@@ -566,11 +537,7 @@ const Buttons = () => {
             </Button>
           </Grid>
           <Grid size={2}>
-            <Button
-              variant="text"
-              color="destructiveLight"
-              startIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button variant="text" color="destructiveLight" startIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
@@ -626,32 +593,17 @@ const Buttons = () => {
             </Button>
           </Grid>
           <Grid size={2}>
-            <Button
-              fullWidth
-              color="primaryLight"
-              textAlign="left"
-              endIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button fullWidth color="primaryLight" textAlign="left" endIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
           <Grid size={2}>
-            <Button
-              fullWidth
-              color="destructive"
-              textAlign="left"
-              endIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button fullWidth color="destructive" textAlign="left" endIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
           <Grid size={2}>
-            <Button
-              fullWidth
-              color="destructiveLight"
-              textAlign="left"
-              endIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button fullWidth color="destructiveLight" textAlign="left" endIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
@@ -665,12 +617,7 @@ const Buttons = () => {
             </Typography>
           </Grid>
           <Grid size={2}>
-            <Button
-              fullWidth
-              variant="outlined"
-              textAlign="left"
-              endIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button fullWidth variant="outlined" textAlign="left" endIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
@@ -722,24 +669,12 @@ const Buttons = () => {
             </Button>
           </Grid>
           <Grid size={2}>
-            <Button
-              fullWidth
-              disabled
-              color="primaryLight"
-              textAlign="left"
-              endIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button fullWidth disabled color="primaryLight" textAlign="left" endIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
           <Grid size={2}>
-            <Button
-              fullWidth
-              disabled
-              color="destructive"
-              textAlign="left"
-              endIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button fullWidth disabled color="destructive" textAlign="left" endIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>
@@ -779,11 +714,7 @@ const Buttons = () => {
             </Button>
           </Grid>
           <Grid size={2}>
-            <Button
-              variant="text"
-              color="destructiveLight"
-              endIcon={<Icon icon={ArrowNarrowRight} />}
-            >
+            <Button variant="text" color="destructiveLight" endIcon={<Icon icon={ArrowNarrowRight} />}>
               Button
             </Button>
           </Grid>

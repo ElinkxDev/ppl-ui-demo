@@ -144,40 +144,16 @@ const TextFields = () => {
             <TextField label="Title" placeholder="Placeholder..." value="Input" disabled />
           </Grid>
           <Grid size={2}>
-            <TextField
-              color="success"
-              label="Title"
-              placeholder="Placeholder..."
-              value="Input"
-              disabled
-            />
+            <TextField color="success" label="Title" placeholder="Placeholder..." value="Input" disabled />
           </Grid>
           <Grid size={2}>
-            <TextField
-              color="error"
-              label="Title"
-              placeholder="Placeholder..."
-              value="Input"
-              disabled
-            />
+            <TextField color="error" label="Title" placeholder="Placeholder..." value="Input" disabled />
           </Grid>
           <Grid size={2}>
-            <TextField
-              color="warning"
-              label="Title"
-              placeholder="Placeholder..."
-              value="Input"
-              disabled
-            />
+            <TextField color="warning" label="Title" placeholder="Placeholder..." value="Input" disabled />
           </Grid>
           <Grid size={2}>
-            <TextField
-              color="carton"
-              label="Title"
-              placeholder="Placeholder..."
-              value="Input"
-              disabled
-            />
+            <TextField color="carton" label="Title" placeholder="Placeholder..." value="Input" disabled />
           </Grid>
         </Grid>
       </Grid>
@@ -273,11 +249,7 @@ const TextFields = () => {
         <Grid container alignItems="center">
           <Grid size={2}>Outlined</Grid>
           <Grid size={2}>
-            <TextField
-              label="Title"
-              placeholder="Placeholder..."
-              startAdornment={<Icon icon={SearchSm} />}
-            />
+            <TextField label="Title" placeholder="Placeholder..." startAdornment={<Icon icon={SearchSm} />} />
           </Grid>
           <Grid size={2}>
             <TextField
@@ -359,43 +331,19 @@ const TextFields = () => {
         <Grid container alignItems="center">
           <Grid size={2}>Outlined</Grid>
           <Grid size={2}>
-            <TextField
-              label="Title"
-              placeholder="Placeholder..."
-              endAdornment={<Icon icon={Eye} />}
-            />
+            <TextField label="Title" placeholder="Placeholder..." endAdornment={<Icon icon={Eye} />} />
           </Grid>
           <Grid size={2}>
-            <TextField
-              color="success"
-              label="Title"
-              placeholder="Placeholder..."
-              endAdornment={<Icon icon={Eye} />}
-            />
+            <TextField color="success" label="Title" placeholder="Placeholder..." endAdornment={<Icon icon={Eye} />} />
           </Grid>
           <Grid size={2}>
-            <TextField
-              color="error"
-              label="Title"
-              placeholder="Placeholder..."
-              endAdornment={<Icon icon={Eye} />}
-            />
+            <TextField color="error" label="Title" placeholder="Placeholder..." endAdornment={<Icon icon={Eye} />} />
           </Grid>
           <Grid size={2}>
-            <TextField
-              color="warning"
-              label="Title"
-              placeholder="Placeholder..."
-              endAdornment={<Icon icon={Eye} />}
-            />
+            <TextField color="warning" label="Title" placeholder="Placeholder..." endAdornment={<Icon icon={Eye} />} />
           </Grid>
           <Grid size={2}>
-            <TextField
-              color="carton"
-              label="Title"
-              placeholder="Placeholder..."
-              endAdornment={<Icon icon={Eye} />}
-            />
+            <TextField color="carton" label="Title" placeholder="Placeholder..." endAdornment={<Icon icon={Eye} />} />
           </Grid>
         </Grid>
       </Grid>
@@ -505,11 +453,7 @@ const TextFields = () => {
       <Grid size={12}>
         <Grid container alignItems="center" spacing={4}>
           <Grid size={6}>
-            <TextField
-              label="Email"
-              placeholder="Enter your email..."
-              helperText="We'll never share your email"
-            />
+            <TextField label="Email" placeholder="Enter your email..." helperText="We'll never share your email" />
           </Grid>
           <Grid size={6}>
             <TextField
@@ -636,40 +580,16 @@ const TextFields = () => {
             <TextField label="Title" placeholder="Placeholder..." multiline rows={6} />
           </Grid>
           <Grid size={2}>
-            <TextField
-              color="success"
-              label="Title"
-              placeholder="Placeholder..."
-              multiline
-              rows={6}
-            />
+            <TextField color="success" label="Title" placeholder="Placeholder..." multiline rows={6} />
           </Grid>
           <Grid size={2}>
-            <TextField
-              color="error"
-              label="Title"
-              placeholder="Placeholder..."
-              multiline
-              rows={6}
-            />
+            <TextField color="error" label="Title" placeholder="Placeholder..." multiline rows={6} />
           </Grid>
           <Grid size={2}>
-            <TextField
-              color="warning"
-              label="Title"
-              placeholder="Placeholder..."
-              multiline
-              rows={6}
-            />
+            <TextField color="warning" label="Title" placeholder="Placeholder..." multiline rows={6} />
           </Grid>
           <Grid size={2}>
-            <TextField
-              color="carton"
-              label="Title"
-              placeholder="Placeholder..."
-              multiline
-              rows={6}
-            />
+            <TextField color="carton" label="Title" placeholder="Placeholder..." multiline rows={6} />
           </Grid>
         </Grid>
       </Grid>

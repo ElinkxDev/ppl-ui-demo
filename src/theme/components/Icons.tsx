@@ -127,25 +127,13 @@ const Icons = () => {
           <Grid size={10}>
             <Grid container columns={10}>
               <Grid>
-                <IconItem
-                  icon={ArrowNarrowLeft}
-                  name="ArrowNarrowLeft"
-                  altName="arrow-narrow-left"
-                />
+                <IconItem icon={ArrowNarrowLeft} name="ArrowNarrowLeft" altName="arrow-narrow-left" />
               </Grid>
               <Grid>
-                <IconItem
-                  icon={ArrowNarrowRight}
-                  name="ArrowNarrowRight"
-                  altName="arrow-narrow-right"
-                />
+                <IconItem icon={ArrowNarrowRight} name="ArrowNarrowRight" altName="arrow-narrow-right" />
               </Grid>
               <Grid>
-                <IconItem
-                  icon={ArrowNarrowDown}
-                  name="ArrowNarrowDown"
-                  altName="arrow-narrow-down"
-                />
+                <IconItem icon={ArrowNarrowDown} name="ArrowNarrowDown" altName="arrow-narrow-down" />
               </Grid>
               <Grid>
                 <IconItem icon={ArrowNarrowUp} name="ArrowNarrowUp" altName="arrow-narrow-up" />
@@ -163,21 +151,13 @@ const Icons = () => {
                 <IconItem icon={ChevronLeft} name="ChevronLeft" altName="chevron-left" />
               </Grid>
               <Grid>
-                <IconItem
-                  icon={ChevronLeftDouble}
-                  name="ChevronLeftDouble"
-                  altName="chevron-left-double"
-                />
+                <IconItem icon={ChevronLeftDouble} name="ChevronLeftDouble" altName="chevron-left-double" />
               </Grid>
               <Grid>
                 <IconItem icon={ChevronRight} name="ChevronRight" altName="chevron-right" />
               </Grid>
               <Grid>
-                <IconItem
-                  icon={ChevronRightDouble}
-                  name="ChevronRightDouble"
-                  altName="chevron-right-double"
-                />
+                <IconItem icon={ChevronRightDouble} name="ChevronRightDouble" altName="chevron-right-double" />
               </Grid>
               <Grid>
                 <IconItem icon={Menu01} name="Menu01" altName="menu-01" />
@@ -303,11 +283,7 @@ const Icons = () => {
           <Grid size={10}>
             <Grid container columns={10}>
               <Grid>
-                <IconItem
-                  icon={MessageChatSquare}
-                  name="MessageChatSquare"
-                  altName="message-chat-square"
-                />
+                <IconItem icon={MessageChatSquare} name="MessageChatSquare" altName="message-chat-square" />
               </Grid>
               <Grid>
                 <IconItem icon={AlertTriangle} name="AlertTriangle" altName="alert-triangle" />
@@ -386,11 +362,7 @@ const Icons = () => {
                 <IconItem icon={SpacePartialIcon} name="SpacePartial" altName="space-partial" />
               </Grid>
               <Grid>
-                <IconItem
-                  icon={SpaceUndefinedIcon}
-                  name="SpaceUndefined"
-                  altName="space-undefined"
-                />
+                <IconItem icon={SpaceUndefinedIcon} name="SpaceUndefined" altName="space-undefined" />
               </Grid>
             </Grid>
           </Grid>

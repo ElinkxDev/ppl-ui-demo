@@ -1,5 +1,5 @@
 import React from "react";
-import { Divider, Icon, TextField, Typography } from "@ppl/ui";
+import { Icon, TextField, Typography } from "@ppl/ui";
 import { Eye } from "@untitledui/icons/Eye";
 
 export default function TextFields() {
