@@ -13,6 +13,7 @@ import {
   ArrowCircleBrokenUpRight,
   Award01,
   Edit05,
+  Loading02,
 } from "@untitledui/icons";
 import { Tooltip } from "@base-ui-components/react/tooltip";
 
@@ -29,6 +30,7 @@ import Radius from "./components/Radius";
 import Selects from "./components/Selects";
 import Switch from "./components/Switch";
 import TextFields from "./components/TextFields";
+import Skeletons from "./components/Skeletons";
 import Tooltips from "./components/Tooltips";
 import Typographies from "./components/Typographies";
 
@@ -142,6 +144,12 @@ const modules: ModuleConfig[] = [
     label: "Tooltip",
     component: <Tooltips />,
     icon: CursorClick02,
+  },
+  {
+    id: "skeleton",
+    label: "Skeleton",
+    component: <Skeletons />,
+    icon: Loading02,
   },
 ];
 
