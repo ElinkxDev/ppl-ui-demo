@@ -21,7 +21,7 @@ const Badges = () => {
             Výchozí vzhled dle default props
           </Typography>
           <Badge badgeContent={4} color="primary">
-            <Icon icon={Inbox01} size="lg" />
+            <Icon icon={Inbox01} size="large" />
           </Badge>
         </div>
       </Grid>
@@ -42,13 +42,13 @@ const Badges = () => {
       <Grid size={12}>
         <div className="flex flex-wrap items-center gap-8">
           <Badge badgeContent={4} color="primary">
-            <Icon icon={Inbox01} size="lg" />
+            <Icon icon={Inbox01} size="large" />
           </Badge>
           <Badge badgeContent={99} color="primary">
-            <Icon icon={Inbox01} size="lg" />
+            <Icon icon={Inbox01} size="large" />
           </Badge>
           <Badge badgeContent={100} color="primary">
-            <Icon icon={Inbox01} size="lg" />
+            <Icon icon={Inbox01} size="large" />
           </Badge>
         </div>
       </Grid>
@@ -87,7 +87,7 @@ const Badges = () => {
           {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Badge badgeContent={4} color={c.key}>
-                <Icon icon={Inbox01} size="lg" />
+                <Icon icon={Inbox01} size="large" />
               </Badge>
             </Grid>
           ))}
@@ -117,7 +117,7 @@ const Badges = () => {
           {colors.map(c => (
             <Grid size={2} key={c.key}>
               <Badge variant="dot" badgeContent={1} color={c.key}>
-                <Icon icon={Inbox01} size="lg" />
+                <Icon icon={Inbox01} size="large" />
               </Badge>
             </Grid>
           ))}
@@ -144,16 +144,16 @@ const Badges = () => {
       <Grid size={12}>
         <div className="flex flex-wrap items-center gap-8">
           <Badge badgeContent={50}>
-            <Icon icon={Inbox01} size="lg" />
+            <Icon icon={Inbox01} size="large" />
           </Badge>
           <Badge badgeContent={100}>
-            <Icon icon={Inbox01} size="lg" />
+            <Icon icon={Inbox01} size="large" />
           </Badge>
           <Badge badgeContent={1000}>
-            <Icon icon={Inbox01} size="lg" />
+            <Icon icon={Inbox01} size="large" />
           </Badge>
           <Badge badgeContent={1000} max={999}>
-            <Icon icon={Inbox01} size="lg" />
+            <Icon icon={Inbox01} size="large" />
           </Badge>
         </div>
       </Grid>
@@ -178,13 +178,13 @@ const Badges = () => {
       <Grid size={12}>
         <div className="flex flex-wrap items-center gap-8">
           <Badge badgeContent={0}>
-            <Icon icon={Inbox01} size="lg" />
+            <Icon icon={Inbox01} size="large" />
           </Badge>
           <Badge badgeContent={0} showZero>
-            <Icon icon={Inbox01} size="lg" />
+            <Icon icon={Inbox01} size="large" />
           </Badge>
           <Badge badgeContent={5} invisible>
-            <Icon icon={Inbox01} size="lg" />
+            <Icon icon={Inbox01} size="large" />
           </Badge>
         </div>
       </Grid>
@@ -210,22 +210,22 @@ const Badges = () => {
         <div className="flex flex-wrap items-center gap-8">
           <Badge badgeContent={4} anchorOrigin={{ vertical: "top", horizontal: "right" }}>
             <div className="flex h-12 w-12 items-center justify-center rounded bg-gray-200">
-              <Icon icon={Inbox01} size="md" />
+              <Icon icon={Inbox01} size="medium" />
             </div>
           </Badge>
           <Badge badgeContent={4} anchorOrigin={{ vertical: "top", horizontal: "left" }}>
             <div className="flex h-12 w-12 items-center justify-center rounded bg-gray-200">
-              <Icon icon={Inbox01} size="md" />
+              <Icon icon={Inbox01} size="medium" />
             </div>
           </Badge>
           <Badge badgeContent={4} anchorOrigin={{ vertical: "bottom", horizontal: "right" }}>
             <div className="flex h-12 w-12 items-center justify-center rounded bg-gray-200">
-              <Icon icon={Inbox01} size="md" />
+              <Icon icon={Inbox01} size="medium" />
             </div>
           </Badge>
           <Badge badgeContent={4} anchorOrigin={{ vertical: "bottom", horizontal: "left" }}>
             <div className="flex h-12 w-12 items-center justify-center rounded bg-gray-200">
-              <Icon icon={Inbox01} size="md" />
+              <Icon icon={Inbox01} size="medium" />
             </div>
           </Badge>
         </div>
@@ -252,22 +252,22 @@ const Badges = () => {
         <div className="flex flex-wrap items-center gap-8">
           <Badge badgeContent={4} overlap="rectangular">
             <div className="flex h-12 w-12 items-center justify-center rounded bg-gray-200">
-              <Icon icon={Inbox01} size="md" />
+              <Icon icon={Inbox01} size="medium" />
             </div>
           </Badge>
           <Badge badgeContent={4} overlap="circular">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-200">
-              <Icon icon={Inbox01} size="md" />
+              <Icon icon={Inbox01} size="medium" />
             </div>
           </Badge>
           <Badge variant="dot" badgeContent={1} overlap="rectangular">
             <div className="flex h-12 w-12 items-center justify-center rounded bg-gray-200">
-              <Icon icon={Inbox01} size="md" />
+              <Icon icon={Inbox01} size="medium" />
             </div>
           </Badge>
           <Badge variant="dot" badgeContent={1} overlap="circular">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-200">
-              <Icon icon={Inbox01} size="md" />
+              <Icon icon={Inbox01} size="medium" />
             </div>
           </Badge>
         </div>

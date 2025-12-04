@@ -285,17 +285,17 @@ const ControlledRadioExample = () => {
         <div className="flex flex-col gap-3">
           <label className="flex cursor-pointer items-center gap-2">
             <Radio value="heart" color="primary" />
-            <Icon icon={Heart} size="md" color="primary" />
+            <Icon icon={Heart} size="medium" color="primary" />
             <span>Heart</span>
           </label>
           <label className="flex cursor-pointer items-center gap-2">
             <Radio value="home" color="success" />
-            <Icon icon={Home02} size="md" color="success" />
+            <Icon icon={Home02} size="medium" color="success" />
             <span>Home</span>
           </label>
           <label className="flex cursor-pointer items-center gap-2">
             <Radio value="user" color="warning" />
-            <Icon icon={User01} size="md" color="warning" />
+            <Icon icon={User01} size="medium" color="warning" />
             <span>User</span>
           </label>
         </div>

@@ -176,7 +176,7 @@ const DesignManual = () => {
             color="primary"
             onClick={() => setIsPanelExpanded(!isPanelExpanded)}
           >
-            <Icon icon={isPanelExpanded ? ChevronLeft : ChevronRight} size="sm" />
+            <Icon icon={isPanelExpanded ? ChevronLeft : ChevronRight} size="small" />
           </IconButton>
         </div>
 
@@ -191,7 +191,7 @@ const DesignManual = () => {
                       className={`hover:bg-headline-5 flex w-full cursor-pointer items-center justify-center gap-3 px-4 py-3 transition-colors`}
                       onClick={() => scrollToSection(module.id)}
                     >
-                      <Icon icon={module.icon} size="md" color="primary" />
+                      <Icon icon={module.icon} size="medium" color="primary" />
                     </Tooltip.Trigger>
                     <Tooltip.Portal>
                       <Tooltip.Positioner side="right" sideOffset={8}>
@@ -210,7 +210,7 @@ const DesignManual = () => {
                   onClick={() => scrollToSection(module.id)}
                   className={`hover:bg-headline-5 flex w-full cursor-pointer items-center gap-3 px-4 py-3 transition-colors`}
                 >
-                  <Icon icon={module.icon} size="md" color="primary" />
+                  <Icon icon={module.icon} size="medium" color="primary" />
                   <Typography variant="body" color="text" className="text-left">
                     {module.label}
                   </Typography>

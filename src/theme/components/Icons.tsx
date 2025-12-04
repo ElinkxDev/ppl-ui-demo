@@ -409,12 +409,12 @@ const Icons = () => {
           </Grid>
           <Grid size={1}>
             <div className="flex justify-center">
-              <Icon icon={Home02} size="md" />
+              <Icon icon={Home02} size="medium" />
             </div>
           </Grid>
           <Grid size={1}>
             <div className="flex justify-center">
-              <Icon icon={Home02} size="sm" />
+              <Icon icon={Home02} size="small" />
             </div>
           </Grid>
         </Grid>
