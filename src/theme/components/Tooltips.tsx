@@ -1,4 +1,6 @@
-import { Button, Divider, Grid, Tooltip, Typography } from "@ppl/ui";
+import { Button, Divider, Grid, Icon, Tooltip, Typography } from "@ppl/ui";
+
+import { Clock } from "@untitledui/icons";
 
 const Tooltips = () => {
   return (
@@ -153,6 +155,57 @@ const Tooltips = () => {
             }
           >
             <Button color="destructive">Smazat</Button>
+          </Tooltip>
+        </div>
+      </Grid>
+
+      <Grid size={12}>
+        <Divider className="my-10" />
+      </Grid>
+
+      {/* SECTION: Cursor */}
+      <Grid size={12}>
+        <Typography variant="h3" gutterBottom>
+          Cursor
+        </Typography>
+      </Grid>
+
+      <Grid size={12}>
+        <Typography variant="body" gutterBottom className="mb-6">
+          Pomocí props <code>cursor</code> lze nastavit typ kurzoru při najetí na element s tooltipem.
+        </Typography>
+      </Grid>
+
+      <Grid size={12}>
+        <div className="flex flex-wrap items-center gap-8">
+          <Tooltip title="Nápověda k tomuto poli" cursor="help">
+            <Button variant="outlined">help</Button>
+          </Tooltip>
+          <Tooltip title="Otevře kontextové menu" cursor="context-menu">
+            <Button variant="outlined">context-menu</Button>
+          </Tooltip>
+          <Tooltip title="Odkaz na jiný obsah" cursor="alias">
+            <Button variant="outlined">alias</Button>
+          </Tooltip>
+          <Tooltip title="Kliknutím zkopírujete" cursor="copy">
+            <Button variant="outlined">copy</Button>
+          </Tooltip>
+          <Tooltip title="Tato akce není povolena" cursor="not-allowed">
+            <Button variant="outlined">not-allowed</Button>
+          </Tooltip>
+          <Tooltip title="Klikací element" cursor="pointer">
+            <Button variant="outlined">pointer</Button>
+          </Tooltip>
+          <Tooltip title="Klikací element" cursor="help">
+            <div>Text</div>
+          </Tooltip>
+          <Tooltip title="Klikací element" cursor="help">
+            <Icon icon={Clock} />
+          </Tooltip>
+          <Tooltip title="Nápověda k tomuto poli" cursor="help">
+            <Button variant="outlined" disabled>
+              Disabled
+            </Button>
           </Tooltip>
         </div>
       </Grid>
