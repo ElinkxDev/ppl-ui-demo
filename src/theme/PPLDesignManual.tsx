@@ -23,7 +23,9 @@ import Checkboxes from "./pplComponents/Checkboxes";
 import Radios from "./pplComponents/Radios";
 import Switches from "./pplComponents/Switches";
 import ChipsAndBadges from "./pplComponents/ChipsAndBadges";
+import Logos from "./pplComponents/Logos";
 import { Type01 } from "@untitledui/icons/Type01";
+import { Image01 } from "@untitledui/icons/Image01";
 import Typographies from "./components/Typographies";
 import Radius from "./components/Radius";
 import { ArrowCircleBrokenUpRight } from "@untitledui/icons/ArrowCircleBrokenUpRight";
@@ -69,6 +71,12 @@ const modules: ModuleConfig[] = [
     label: "Palette",
     component: <Palette />,
     icon: PaletteIcon,
+  },
+  {
+    id: "logo",
+    label: "Logo",
+    component: <Logos />,
+    icon: Image01,
   },
   {
     id: "typography",
