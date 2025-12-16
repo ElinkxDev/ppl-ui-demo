@@ -11,10 +11,9 @@ import {
   Tag01,
   AlignLeft01,
   Palette as PaletteIcon,
+  Bell01,
 } from "@untitledui/icons";
-import { Tooltip } from "@base-ui-components/react/tooltip";
-
-import { Divider, Icon, IconButton, Typography } from "@ppl/ui";
+import { Divider, Icon, IconButton, Tooltip, Typography } from "@ppl/ui";
 
 import Buttons from "./pplComponents/Buttons";
 import TextFields from "./pplComponents/TextFields";
@@ -32,6 +31,7 @@ import { ArrowCircleBrokenUpRight } from "@untitledui/icons/ArrowCircleBrokenUpR
 import Icons from "./components/Icons";
 import Palette from "./pplComponents/Pallete";
 import Selects from "./pplComponents/Selects";
+import Toasts from "./pplComponents/Toasts";
 
 const Container = ({ children, id }: { children: React.ReactNode; id?: string }) => {
   return (
@@ -144,6 +144,12 @@ const modules: ModuleConfig[] = [
     component: <ChipsAndBadges />,
     icon: Tag01,
   },
+  {
+    id: "toasts",
+    label: "Toasts",
+    component: <Toasts />,
+    icon: Bell01,
+  },
 ];
 
 const PPLDesignManual = () => {
@@ -183,42 +189,33 @@ const PPLDesignManual = () => {
 
         {/* Navigační položky */}
         <nav className="py-4">
-          <Tooltip.Provider>
-            {modules.map(module => {
-              if (!isPanelExpanded) {
-                return (
-                  <Tooltip.Root key={module.id}>
-                    <Tooltip.Trigger
-                      className={`hover:bg-headline-5 flex w-full cursor-pointer items-center justify-center gap-3 px-4 py-3 transition-colors`}
-                      onClick={() => scrollToSection(module.id)}
-                    >
-                      <Icon icon={module.icon} size="medium" color="primary" />
-                    </Tooltip.Trigger>
-                    <Tooltip.Portal>
-                      <Tooltip.Positioner side="right" sideOffset={8}>
-                        <Tooltip.Popup className="text-text-inverse rounded px-2 py-1 text-sm shadow-lg">
-                          {module.label}
-                        </Tooltip.Popup>
-                      </Tooltip.Positioner>
-                    </Tooltip.Portal>
-                  </Tooltip.Root>
-                );
-              }
-
+          {modules.map(module => {
+            if (!isPanelExpanded) {
               return (
-                <button
-                  key={module.id}
-                  onClick={() => scrollToSection(module.id)}
-                  className={`hover:bg-headline-5 flex w-full cursor-pointer items-center gap-3 px-4 py-3 transition-colors`}
-                >
-                  <Icon icon={module.icon} size="medium" color="primary" />
-                  <Typography variant="body" color="text" className="text-left">
-                    {module.label}
-                  </Typography>
-                </button>
+                <Tooltip key={module.id} title={module.label}>
+                  <button
+                    className="hover:bg-headline-5 flex w-full cursor-pointer items-center justify-center gap-3 px-4 py-3 transition-colors"
+                    onClick={() => scrollToSection(module.id)}
+                  >
+                    <Icon icon={module.icon} size="medium" color="primary" />
+                  </button>
+                </Tooltip>
               );
-            })}
-          </Tooltip.Provider>
+            }
+
+            return (
+              <button
+                key={module.id}
+                onClick={() => scrollToSection(module.id)}
+                className="hover:bg-headline-5 flex w-full cursor-pointer items-center gap-3 px-4 py-3 transition-colors"
+              >
+                <Icon icon={module.icon} size="medium" color="primary" />
+                <Typography variant="body" color="text" className="text-left">
+                  {module.label}
+                </Typography>
+              </button>
+            );
+          })}
         </nav>
       </div>
 
