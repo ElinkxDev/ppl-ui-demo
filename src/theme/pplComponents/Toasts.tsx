@@ -15,8 +15,8 @@ export default function Toasts() {
   const variants: { key: ToastVariant; label: string }[] = [
     { key: "success", label: "Success" },
     { key: "warning", label: "Warning" },
-    { key: "danger", label: "Danger" },
-    { key: "primary", label: "Primary" },
+    { key: "error", label: "Error" },
+    { key: "info", label: "Info" },
     { key: "general", label: "General" },
   ];
 
@@ -50,7 +50,7 @@ export default function Toasts() {
         Varianty
       </Typography>
       <Typography variant="body" className="text-text-secondary mb-4">
-        Toast podporuje 5 barevných variant: success, warning, danger, primary a general (výchozí).
+        Toast podporuje 5 barevných variant: success, warning, error, info a general (výchozí).
       </Typography>
       <div className="flex flex-wrap gap-4">
         {variants.map(v => (
@@ -90,7 +90,7 @@ export default function Toasts() {
         <Toast
           open={!!openPosition}
           message={`Toast v pozici ${currentPosition.label}`}
-          variant="primary"
+          variant="info"
           anchorOrigin={{ vertical: currentPosition.vertical, horizontal: currentPosition.horizontal }}
           onClose={() => setOpenPosition(null)}
         />
@@ -139,7 +139,7 @@ export default function Toasts() {
       <Toast
         open={openCustomIcon}
         message="Toast s vlastní ikonou zvonečku"
-        variant="primary"
+        variant="info"
         icon={Bell01}
         onClose={() => setOpenCustomIcon(false)}
       />
