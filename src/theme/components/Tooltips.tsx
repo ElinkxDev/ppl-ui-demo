@@ -1,4 +1,4 @@
-import { Button, Divider, Grid, Icon, Tooltip, Typography } from "@ppl/ui";
+import { Button, Chip, Divider, Grid, Icon, Tooltip, Typography } from "@ppl/ui";
 
 import { Clock } from "@untitledui/icons";
 
@@ -155,6 +155,40 @@ const Tooltips = () => {
             }
           >
             <Button color="destructive">Smazat</Button>
+          </Tooltip>
+        </div>
+      </Grid>
+
+      <Grid size={12}>
+        <Divider className="my-10" />
+      </Grid>
+
+      {/* SECTION: Tooltip s Chip */}
+      <Grid size={12}>
+        <Typography variant="h3" gutterBottom>
+          Tooltip s Chip
+        </Typography>
+      </Grid>
+
+      <Grid size={12}>
+        <Typography variant="body" gutterBottom className="mb-6">
+          Tooltip lze použít i na komponentě Chip pro zobrazení dodatečných informací.
+        </Typography>
+      </Grid>
+
+      <Grid size={12}>
+        <div className="flex flex-wrap items-center gap-8">
+          <Tooltip title="Uživatel je aktivní od 15.1.2024">
+            <Chip label="Aktivní" color="success" />
+          </Tooltip>
+          <Tooltip title="Role s plným přístupem do systému">
+            <Chip label="Admin" color="primary" />
+          </Tooltip>
+          <Tooltip title="3 nevyřízené položky">
+            <Chip label="Čeká na schválení" color="warning" />
+          </Tooltip>
+          <Tooltip title="Chyba při synchronizaci dat">
+            <Chip label="Chyba" color="error" />
           </Tooltip>
         </div>
       </Grid>
