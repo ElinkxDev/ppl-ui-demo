@@ -32,6 +32,8 @@ import Icons from "./components/Icons";
 import Palette from "./pplComponents/Pallete";
 import Selects from "./pplComponents/Selects";
 import Toasts from "./pplComponents/Toasts";
+import Alerts from "./pplComponents/Alerts";
+import { AlertCircle } from "@untitledui/icons/AlertCircle";
 
 const Container = ({ children, id }: { children: React.ReactNode; id?: string }) => {
   return (
@@ -149,6 +151,12 @@ const modules: ModuleConfig[] = [
     label: "Toasts",
     component: <Toasts />,
     icon: Bell01,
+  },
+  {
+    id: "alerts",
+    label: "Alerts",
+    component: <Alerts />,
+    icon: AlertCircle,
   },
 ];
 
