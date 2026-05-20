@@ -1,6 +1,8 @@
 import { ArrowNarrowRight } from "@untitledui/icons/ArrowNarrowRight";
+import { ArrowNarrowLeft, RefreshCcw01, XClose } from "@untitledui/icons";
 
 import { Button, Divider, Grid, Icon, IconButton, Typography } from "@ppl/ui";
+import { SendRecieveIcon } from "@ppl/ui/icons";
 
 const Buttons = () => {
   return (
@@ -874,6 +876,34 @@ const Buttons = () => {
             </IconButton>
           </Grid>
         </Grid>
+      </Grid>
+
+      <Grid size={12}>
+        <Divider className="my-10" />
+      </Grid>
+
+      {/* SECTION: Action panel */}
+      <Grid size={12}>
+        <Typography variant="h3" gutterBottom>
+          Action panel
+        </Typography>
+      </Grid>
+
+      <Grid size={12}>
+        <div className="flex items-center justify-around rounded-2xl bg-white px-6 py-4 shadow-md">
+          <Button variant="text" startIcon={<Icon icon={SendRecieveIcon} />}>
+            Změnit doručení
+          </Button>
+          <Button variant="text" startIcon={<Icon icon={ArrowNarrowLeft} />}>
+            Vrátit
+          </Button>
+          <Button variant="text" startIcon={<Icon icon={RefreshCcw01} />}>
+            Reklamovat
+          </Button>
+          <Button variant="text" startIcon={<Icon icon={XClose} />}>
+            Odmítnout
+          </Button>
+        </div>
       </Grid>
     </Grid>
   );

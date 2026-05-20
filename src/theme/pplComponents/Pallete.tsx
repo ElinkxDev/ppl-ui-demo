@@ -99,18 +99,14 @@ export function Pallete() {
 
       <div className="grid grid-cols-4 gap-6">
         <div className="flex flex-col">
-          <div
-            className={`to-primary border-headline-10 h-32 w-full rounded-md border bg-linear-to-r from-[#2574C3]`}
-          />
+          <div className="bg-gradient-primary border-headline-10 h-32 w-full rounded-md border" />
           <div className="mt-2">
             <p className="text-headline text-sm font-medium">Primary Gradient</p>
             <p className="text-text-60 text-xs">Linear from:#2574C3, to: #004B93</p>
           </div>
         </div>
         <div className="flex flex-col">
-          <div
-            className={`border-headline-10 h-32 w-full rounded-md border bg-linear-to-r from-[var(--color-primary-10)] to-[var(--color-primary-30)]`}
-          />
+          <div className="bg-gradient-secondary border-headline-10 h-32 w-full rounded-md border" />
           <div className="mt-2">
             <p className="text-headline text-sm font-medium">Secondary Gradient</p>
             <p className="text-text-60 text-xs">Linear from:#E5EDF4, to: #B8D9F5</p>
