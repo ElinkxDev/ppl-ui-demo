@@ -905,6 +905,159 @@ const Buttons = () => {
           </Button>
         </div>
       </Grid>
+
+      <Grid size={12}>
+        <Divider className="my-10" />
+      </Grid>
+
+      {/* SECTION: Link variant – přehled stavů */}
+      <Grid size={12}>
+        <Typography variant="h3" gutterBottom>
+          Link variant
+        </Typography>
+        <Typography gutterBottom>
+          Inline odkaz bez paddingu (<code>variant=&quot;link&quot;</code>) – pro vložení do běžného textu nebo karet.
+        </Typography>
+      </Grid>
+
+      <Grid size={12}>
+        <Grid container alignItems="center">
+          <Grid size={2}></Grid>
+          <Grid size={2}>
+            <Typography component="strong" className="block text-center font-bold">
+              Primary
+            </Typography>
+          </Grid>
+          <Grid size={2}>
+            <Typography component="strong" className="block text-center font-bold">
+              Primary Light
+            </Typography>
+          </Grid>
+          <Grid size={2}>
+            <Typography component="strong" className="block text-center font-bold">
+              Destructive
+            </Typography>
+          </Grid>
+          <Grid size={2}>
+            <Typography component="strong" className="block text-center font-bold">
+              Destructive Light
+            </Typography>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid size={12}>
+        <Grid container alignItems="center">
+          <Grid size={2}>
+            <Typography component="strong" className="block font-bold">
+              Normal
+            </Typography>
+          </Grid>
+          <Grid size={2} className="text-center">
+            <Button variant="link">Zvolit výdejní místo</Button>
+          </Grid>
+          <Grid size={2} className="text-center">
+            <Button variant="link" color="primaryLight">
+              Zvolit výdejní místo
+            </Button>
+          </Grid>
+          <Grid size={2} className="text-center">
+            <Button variant="link" color="destructive">
+              Zrušit objednávku
+            </Button>
+          </Grid>
+          <Grid size={2} className="text-center">
+            <Button variant="link" color="destructiveLight">
+              Zrušit objednávku
+            </Button>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid size={12}>
+        <Grid container alignItems="center" className="mt-4">
+          <Grid size={2}>
+            <Typography component="strong" className="block font-bold">
+              With endIcon
+            </Typography>
+          </Grid>
+          <Grid size={2} className="text-center">
+            <Button variant="link" endIcon={<Icon icon={ArrowNarrowRight} />}>
+              Pokračovat
+            </Button>
+          </Grid>
+          <Grid size={2} className="text-center">
+            <Button variant="link" color="primaryLight" endIcon={<Icon icon={ArrowNarrowRight} />}>
+              Pokračovat
+            </Button>
+          </Grid>
+          <Grid size={2} className="text-center">
+            <Button variant="link" color="destructive" endIcon={<Icon icon={ArrowNarrowRight} />}>
+              Smazat
+            </Button>
+          </Grid>
+          <Grid size={2} className="text-center">
+            <Button variant="link" color="destructiveLight" endIcon={<Icon icon={ArrowNarrowRight} />}>
+              Smazat
+            </Button>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid size={12}>
+        <Grid container alignItems="center" className="mt-4">
+          <Grid size={2}>
+            <Typography component="strong" className="block font-bold">
+              Disabled
+            </Typography>
+          </Grid>
+          <Grid size={2} className="text-center">
+            <Button variant="link" disabled>
+              Zvolit výdejní místo
+            </Button>
+          </Grid>
+          <Grid size={2} className="text-center">
+            <Button variant="link" color="primaryLight" disabled>
+              Zvolit výdejní místo
+            </Button>
+          </Grid>
+          <Grid size={2} className="text-center">
+            <Button variant="link" color="destructive" disabled>
+              Zrušit objednávku
+            </Button>
+          </Grid>
+          <Grid size={2} className="text-center">
+            <Button variant="link" color="destructiveLight" disabled>
+              Zrušit objednávku
+            </Button>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid size={12}>
+        <Divider className="my-10" />
+      </Grid>
+
+      {/* SECTION: Use case – výběr výdejního místa */}
+      <Grid size={12}>
+        <Typography variant="h3" gutterBottom>
+          Use case – výběr výdejního místa
+        </Typography>
+        <Typography gutterBottom>
+          Inline použití varianty <code>link</code> v rámci karty s informacemi o doručení.
+        </Typography>
+      </Grid>
+
+      <Grid size={12}>
+        <div className="flex max-w-sm flex-col items-start gap-1 rounded-2xl bg-white px-6 py-5 shadow-md">
+          <Typography variant="h5" component="strong" className="font-bold">
+            Doručit na výdejní místo
+          </Typography>
+          <Typography>PPL BOX OST Polanecká (Stračena)</Typography>
+          <Button variant="link">Zvolit výdejní místo</Button>
+          <Typography className="font-bold text-success">Zdarma</Typography>
+        </div>
+      </Grid>
     </Grid>
   );
 };

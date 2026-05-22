@@ -16,6 +16,7 @@ import {
 import { Divider, Icon, IconButton, Tooltip, Typography } from "@ppl/ui";
 
 import Buttons from "./pplComponents/Buttons";
+import Links from "./pplComponents/Links";
 import TextFields from "./pplComponents/TextFields";
 import TextAreas from "./pplComponents/TextAreas";
 import Checkboxes from "./pplComponents/Checkboxes";
@@ -34,6 +35,7 @@ import Selects from "./pplComponents/Selects";
 import Toasts from "./pplComponents/Toasts";
 import Alerts from "./pplComponents/Alerts";
 import { AlertCircle } from "@untitledui/icons/AlertCircle";
+import { Link01 } from "@untitledui/icons/Link01";
 
 const Container = ({ children, id }: { children: React.ReactNode; id?: string }) => {
   return (
@@ -103,6 +105,12 @@ const modules: ModuleConfig[] = [
     label: "Buttons",
     component: <Buttons />,
     icon: CursorClick02,
+  },
+  {
+    id: "links",
+    label: "Links",
+    component: <Links />,
+    icon: Link01,
   },
   {
     id: "textfields",
