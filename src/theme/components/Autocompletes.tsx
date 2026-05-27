@@ -54,10 +54,22 @@ const optionsWithDisabled: AutocompleteOption<string>[] = [
   { value: "overnight", label: "Overnight Delivery", disabled: true },
 ];
 
+// WEBY2-598: dvě položky se shodným labelem, ale různou hodnotou (reálný EOL případ — stejná ulice v jiném městě).
+const duplicateLabelOptions: AutocompleteOption<string>[] = [
+  { value: "vyzlovka", label: "Na Staré cestě 92" },
+  { value: "silherovice", label: "Na Staré cestě 92" },
+];
+
+const duplicateLabelCity: Record<string, string> = {
+  vyzlovka: "Vyžlovka",
+  silherovice: "Šilheřovice",
+};
+
 const Autocompletes = () => {
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
   const [selectedCountryLabel, setSelectedCountryLabel] = useState<string | null>(null);
   const [lastEvent, setLastEvent] = useState<string>("");
+  const [selectedAddress, setSelectedAddress] = useState<string | null>(null);
 
   return (
     <Grid container>
@@ -105,6 +117,54 @@ const Autocompletes = () => {
               placeholder="Bez helperTextu..."
               textFieldProps={{ label: "Země (bez helperTextu)" }}
             />
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid size={12}>
+        <Divider className="my-10" />
+      </Grid>
+
+      {/* SECTION: WEBY2-598 — duplicitní labely vybírají správnou položku */}
+      <Grid size={12}>
+        <Typography variant="h3" gutterBottom>
+          WEBY2-598 — duplicitní labely (identita výběru)
+        </Typography>
+        <Typography variant="body" className="mb-4 text-gray-600">
+          Obě položky mají <strong>stejný label „Na Staré cestě 92&ldquo;</strong>, ale různou hodnotu (Vyžlovka vs
+          Šilheřovice). Dřív se vybraná položka dohledávala podle labelu, takže výběr vždy vrátil tu první. Po fixu se
+          výběr váže na identitu skutečně zvýrazněné položky — vyber <strong>druhou</strong> položku (klikem nebo ↓ +
+          Enter) a ověř, že se v boxu objeví <strong>silherovice</strong>, ne <strong>vyzlovka</strong>.
+        </Typography>
+      </Grid>
+
+      <Grid size={12}>
+        <Grid container alignItems="flex-start" spacing={4}>
+          <Grid size={6}>
+            <Autocomplete
+              options={duplicateLabelOptions}
+              highlightMatch={false}
+              placeholder='Napiš „Na" a vyber druhou položku...'
+              onSelect={value => setSelectedAddress(value)}
+              textFieldProps={{
+                label: "Adresa (duplicitní label)",
+                helperText: "Obě položky mají stejný label, liší se jen hodnotou",
+              }}
+            />
+            <div className="mt-4 rounded border border-gray-200 bg-gray-50 p-3">
+              <Typography variant="labelS" className="text-gray-500">
+                Vybraná hodnota (onSelect):
+              </Typography>
+              <Typography variant="body" className="mt-1 font-semibold">
+                {selectedAddress ? (
+                  <span className="text-green-600">
+                    {duplicateLabelCity[selectedAddress]} (value: {selectedAddress})
+                  </span>
+                ) : (
+                  <span className="text-gray-400">Žádná hodnota nevybrána</span>
+                )}
+              </Typography>
+            </div>
           </Grid>
         </Grid>
       </Grid>
