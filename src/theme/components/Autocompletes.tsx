@@ -75,6 +75,44 @@ const Autocompletes = () => {
         </div>
       </Grid>
 
+      {/* SECTION: WEBY2-594 — aria-hidden fix */}
+      <Grid size={12}>
+        <Typography variant="h3" gutterBottom>
+          WEBY2-594 — aria-hidden fix (otevři konzoli)
+        </Typography>
+        <Typography variant="body" className="mb-4 text-gray-600">
+          Klikni do pole, napiš ≥ 3 znaky a sleduj konzoli prohlížeče. Po fixu se NESMÍ objevit warning{" "}
+          <strong>„Blocked aria-hidden on an element because its descendant retained focus&ldquo;</strong>. Popup s
+          helperTextem se nově otevírá těsně pod inputem (dřív až pod helperTextem) — vizuálně ověř, že lícuje.
+        </Typography>
+      </Grid>
+
+      <Grid size={12}>
+        <Grid container alignItems="flex-start" spacing={4}>
+          <Grid size={6}>
+            <Autocomplete
+              options={cityOptions}
+              placeholder='Napiš ≥ 3 znaky (např. „Pra")...'
+              textFieldProps={{
+                label: "Město (s helperTextem)",
+                helperText: "Otevři konzoli — nesmí být aria-hidden warning",
+              }}
+            />
+          </Grid>
+          <Grid size={6}>
+            <Autocomplete
+              options={countryOptions}
+              placeholder="Bez helperTextu..."
+              textFieldProps={{ label: "Země (bez helperTextu)" }}
+            />
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid size={12}>
+        <Divider className="my-10" />
+      </Grid>
+
       {/* SECTION: Basic States */}
       <Grid size={12}>
         <Typography variant="h3" gutterBottom>

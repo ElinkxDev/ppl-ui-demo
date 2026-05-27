@@ -32,10 +32,12 @@ import { ArrowCircleBrokenUpRight } from "@untitledui/icons/ArrowCircleBrokenUpR
 import Icons from "./components/Icons";
 import Palette from "./pplComponents/Pallete";
 import Selects from "./pplComponents/Selects";
+import DatePickers from "./pplComponents/DatePickers";
 import Toasts from "./pplComponents/Toasts";
 import Alerts from "./pplComponents/Alerts";
 import { AlertCircle } from "@untitledui/icons/AlertCircle";
 import { Link01 } from "@untitledui/icons/Link01";
+import { Calendar } from "@untitledui/icons/Calendar";
 
 const Container = ({ children, id }: { children: React.ReactNode; id?: string }) => {
   return (
@@ -129,6 +131,12 @@ const modules: ModuleConfig[] = [
     label: "Selects",
     component: <Selects />,
     icon: AlignLeft01,
+  },
+  {
+    id: "datepickers",
+    label: "Date Pickers",
+    component: <DatePickers />,
+    icon: Calendar,
   },
   {
     id: "checkboxes",
